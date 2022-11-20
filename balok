@@ -1,0 +1,64 @@
+class balok
+{
+    private int panjang, lebar, tinggi, volume, luasPermukaan;
+    public void setPanjang(int p)
+    {
+    panjang = p;
+    }
+
+    public void setLebar(int l)
+    {
+    lebar = l;
+    }
+    public void setTinggi(int t)
+    {
+    tinggi = t;
+    }
+    public void setVolume()
+    {
+    volume = panjang * tinggi * lebar;
+    }
+    public void setLuasPermukaan()
+    {
+    luasPermukaan = 2 * panjang * lebar + 2 * panjang * tinggi + 2 * lebar * tinggi;
+    }
+    public int getPanjang()
+    {
+    return panjang;
+    }
+    public int getLebar()
+    {
+    return lebar;
+    }
+    public int getTinggi()
+    {
+    return tinggi;
+    }
+    public int getVolume()
+    {
+    return volume;
+    }
+    public int getLuasPermukaan()
+    {
+    return luasPermukaan;
+    }
+}
+ 
+class balokTestDrive
+{
+    public static void main(String[] balok)
+    {
+    balok B = new balok();
+    System.out.println("Bangun Balok");
+    B.setPanjang(5);
+    B.setLebar(4);
+    B.setTinggi(3);
+    B.setVolume();
+    B.setLuasPermukaan();
+    System.out.println("Panjang balok = "+ B.getPanjang());
+    System.out.println("Lebar balok = " + B.getLebar());
+    System.out.println("Tinggi balok = "+ B.getTinggi());
+    System.out.println("Volume balok = "+ B.getVolume());
+    System.out.println("Luas permukaan balok = "+ B.getLuasPermukaan());
+    }
+}
